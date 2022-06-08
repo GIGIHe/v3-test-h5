@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // 仅限开发时使用（生产环境用官方推荐的 地址那一种吧）
+      window._AMapSecurityConfig = {
+        securityJsCode: "xxxxx",//要自己申请的吧 
+      }
+    </script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=60eff3a15800f23bb2bbc2fbf5bf8831&plugin=AMap.ControlBar,AMap.MouseTool,AMap.PolyEditor,AMap.Geocoder,AMap.Autocomplete,AMap.PlaceSearch,AMap.DistrictSearch"></script>
+  </body>
+</html>
